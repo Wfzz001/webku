@@ -281,6 +281,11 @@ section img:target {
         margin: auto;
     }
 
+    .menu-toggle {
+        margin: auto;
+        float: right;
+    }
+
     nav .menu {
         width: 100%;
         margin: 0;
