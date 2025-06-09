@@ -274,8 +274,7 @@ section img:target {
         display:none
     }
 
-    .logo a {
-        font-size: 41px;
+    .logo a {        
         text-align: center;
         float: center;
         margin: auto;
