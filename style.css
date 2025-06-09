@@ -371,11 +371,7 @@ section img:target {
 }
 
 @media screen and (max-width: 991.98px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    nav {
+        nav {
         flex-wrap: wrap;
     }
 
