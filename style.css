@@ -1,0 +1,299 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.wrapper{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.flogo img {
+    width: 58px;
+    height: auto;
+    float: left;
+    display: flex;
+    margin-right: 5px;
+    padding-bottom: 5px;
+}
+
+@import url('"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+.logo a {
+    font-size: 56px;
+    font-weight: bold;
+    float: left;
+    font-family: 'Playfair Display', serif;
+    color: #537D5D;
+    word-spacing: 1px;
+}
+
+.menu {
+    float: right;
+}
+
+.menu li {
+    margin-left: 19px;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+    border-bottom: 1px solid black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    text-decoration: 0px 16px 0px 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+img {
+    width: 800px;
+    height: 350px;
+    margin-top: 10px;
+    border-radius: 20px 20px 20px 20px
+}
+
+.kolom {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+}
+
+.kolom .deskripsi {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #253228;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800px;
+    font-size: 22px;
+    margin-bottom: 2px;
+    color: #0a3014;
+    width: 100%;
+    line-height: 30px;
+}
+
+a.tombol1 {
+    background: #B6B09F;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tombol1:hover{
+    background: #b88804;
+    text-decoration: none;
+}
+
+.img2 {
+    width: 1400px;
+    height: 350px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.galeri-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.galeri1 {
+    width: 50%;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.galeri1 img {
+    width: 80%;
+    height: 40%;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.galeri1 p {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    color: #0a3014;
+}
+
+#kontak {
+    background: #0a420e;
+    padding: 50px 0px 50px 0px;
+    color: aliceblue;
+    border-bottom: 5px solid #B6B09F;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.footer1 {
+    width: 25%;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: aquamarine;
+    width: 100%;
+    line-height: 50px;
+    position:-webkit-sticky;
+    text-align: center;
+}
+
+.un {
+    text-decoration: underline;
+    text-align: center;
+}
+
+#footer2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.social-buttons {
+  display: flex;         /* Agar tombol berbaris */
+  justify-content: center; /* Tengah secara horizontal (opsional) */
+  gap: 12px;             /* Jarak antar tombol */
+  margin-top: 0px;
+}
+
+.btn {
+  width: 220px;            /* Ukuran tombol seragam */
+  padding: 6px 0;         /* Tinggi tombol */
+  text-align: center;      /* Teks di tengah */
+  font-size: 16px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.facebook {
+  background-color: #1877F2;
+}
+
+.youtube {
+  background-color: #FF0000;
+}
+
+.tiktok {
+  background-color: #000000;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+}
+
+section img:target {
+    scroll-margin-top:inherit;
+    padding-top: 0%;
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .flogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo {
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+}
