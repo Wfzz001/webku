@@ -390,36 +390,3 @@ h3 {
     margin: auto;
   }
 }
-
-/* Tambahan khusus untuk ukuran layar hp 423px */
-@media (max-width: 423px) {
-  .logo a {
-    font-size: 36px;
-  }
-
-  .menu li a {
-    font-size: 14px;
-  }
-
-  h2, h3 {
-    font-size: 18px;
-  }
-
-  .btn {
-    font-size: 14px;
-    padding: 6px;
-  }
-
-  .footer2 {
-    padding: 0 10px;
-  }
-
-  .kolom .deskripsi {
-    font-size: 13px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-}
-
