@@ -10,25 +10,25 @@ body {
     font-family: 'Open Sans',sans-serif;
 }
 
-.wrapper {
-    max-width: 1100px;
-    width: 100%;
+.wrapper{
+    width: 1100px;
     margin: auto;
     position: relative;
 }
 
 .flogo img {
-    width: 58px;
-    height: auto;
+    width: 50px;
+    height: 50px;
     float: left;
     display: flex;
     margin-right: 5px;
-    padding-bottom: 5px;
+    padding: 15px 5px 15px 5px;
 }
+
 
 @import url('"https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 .logo a {
-    font-size: 56px;
+    font-size: 50px;
     font-weight: bold;
     float: left;
     font-family: 'Playfair Display', serif;
@@ -86,24 +86,29 @@ section {
     margin-bottom: 50px;
 }
 
-img {
+.img1 {
+  text-align: center;
+}
+
+.foto {
+    display: inline-block;
     width: 800px;
-    height: 350px;
+    height: 500px;
     margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 20px 20px 20px 20px
+
 }
 
 .kolom {
-    margin-top: 60px;
-    margin-bottom: 50px;
-    margin-left: 40px;
+    margin: 10px 220px 30px 220px;
 }
 
 .kolom .deskripsi {
     font-size: 15px;
     font-weight: bold;
     font-family: 'comic sans ms';
-    color: #253228;
+    color: #497d55;
 }
 
 h2 {
@@ -111,16 +116,20 @@ h2 {
     font-weight: 800px;
     font-size: 22px;
     margin-bottom: 2px;
-    color: #0a3014;
+    color: #537D5D;
     width: 100%;
     line-height: 30px;
+}
+
+p {
+    text-align: justify;
 }
 
 a.tombol1 {
     background: #B6B09F;
     border-radius: 20px;
     margin-top: 20px;
-    padding: 15px 20px 15px 20px;
+    padding: 10px 15px 10px 15px;
     color: white;
     cursor: pointer;
     font-weight: bold;
@@ -171,14 +180,54 @@ a.tombol1:hover{
     color: #0a3014;
 }
 
-#kontak {
-    background: #0a420e;
-    padding: 50px 0px 50px 0px;
-    color: aliceblue;
-    border-bottom: 5px solid #B6B09F;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  table-layout: fixed;
+}
+
+.judul {
+    text-align: center;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #020000;
+  text-align: left;
+}
+
+th {  
+  color: #191a19;
+}
+
+#warna-atas {
+    background-color: rgb(11, 208, 67);
+}
+
+.warna1 {
+    background-color: rgb(245, 255, 246);    
+}
+
+.warna2 {
+    background-color: #b4f1c3;
 }
 
 .footer {
+  background-color: #537D5D;
+}
+
+.footer {
+    background: #537D5D;
+    padding: 20px 0px 20px 0px;
+    color: aliceblue;
+    border-bottom: 5px solid #B6B09F;
+    border-top: 5px solid #B6B09F;
+}
+
+.bagian {
     width: 100%;
     position: relative;
     display: flex;
@@ -187,12 +236,14 @@ a.tombol1:hover{
     line-height: 1.5;
 }
 
-.footer1 {
-    width: 25%;
-    margin: auto;
+.footer2 {
+    width: 25%;    
+    margin-left: 40px;
+    margin-right: 40px;
     text-align: justify;
     margin-bottom: 30px;
     justify-content: center;
+    text-align: top;
 }
 
 h3 {
@@ -203,7 +254,6 @@ h3 {
     color: aquamarine;
     width: 100%;
     line-height: 50px;
-    position:-webkit-sticky;
     text-align: center;
 }
 
@@ -212,23 +262,24 @@ h3 {
     text-align: center;
 }
 
-#footer2 {
+#sm {
     text-align: center;
     width: 100%;
     margin-bottom: 5px;
+    gap: 10px;
 }
 
 .social-buttons {
-  display: flex;         /* Agar tombol berbaris */
-  justify-content: center; /* Tengah secara horizontal (opsional) */
-  gap: 12px;             /* Jarak antar tombol */
+  display: flex;    
+  justify-content: center; 
+  gap: 12px;            
   margin-top: 0px;
 }
 
 .btn {
-  width: 220px;            /* Ukuran tombol seragam */
-  padding: 6px 0;         /* Tinggi tombol */
-  text-align: center;      /* Teks di tengah */
+  width: 120px;        
+  padding: 4px;        
+  text-align: center;      
   font-size: 16px;
   font-weight: bold;
   font-family: sans-serif;
@@ -259,144 +310,83 @@ h3 {
     width: 100%;
 }
 
-section img:target {
-    scroll-margin-top:inherit;
-    padding-top: 0%;
-    scroll-behavior: smooth;
-}
+/* Tambahan media query untuk tampilan mobile */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+    padding: 0 10px;
+  }
 
-@media screen and (max-width: 991.98px) {
-    .wrapper {
-        width: 90%;
-    }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    line-height: normal;
+  }
 
-    .flogo {
-        display:none
-    }
+  .menu {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .logo a {
-        text-size: 15px;
-        text-align: center;
-        float: center;
-        margin: auto;
-    }
+  .menu li {
+    margin: 15px 5px;
+  }
 
-    .menu-toggle {
-        margin: auto;
-        float: right;
-    }
+  .flogo img {
+    float: none;
+    margin: 10px auto;
+    display: block;
+  }
 
-    nav .menu {
-        width: 100%;
-        margin: 0;
-    }
+  .logo a {
+    float: none;
+    text-align: center;
+    display: block;
+  }
 
-    nav .menu ul {
-        text-align: center;
-        margin: auto;
-        line-height: 60px;
-    }
+  section {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
 
-    nav .menu ul li {
-        display: inline-block;
-        float: none;
-    }
-}
+  .kolom {
+    margin: 10px;
+  }
 
-@media screen and (max-width: 991.98px) {
-    section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .foto {
+    width: 100%;
+    height: auto;
+  }
 
-    img {
-        width: 100%;
-        height: auto;
-    }
+  .img2 {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
 
-    .img2 {
-        width: 100%;
-        height: auto;
-        margin: 20px 0;
-    }
+  .galeri1 {
+    width: 100%;
+  }
 
-    .kolom {
-        margin: 20px;
-    }
+  .galeri1 img {
+    width: 100%;
+  }
 
-    .galeri-list {
-        flex-direction: column;
-        align-items: center;
-    }
+  .footer2 {
+    width: 100%;
+    margin: 10px 0;
+  }
 
-    .galeri1 {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .social-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
 
-    .galeri1 img {
-        width: 90%;
-        height: auto;
-    }
-
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer1 {
-        width: 90%;
-    }
-
-    .social-buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .btn {
-        width: 80%;
-        margin: 0 auto;
-    }
-}
-
-/* Tombol menu toggle (hamburger) */
-.menu-toggle {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: #333;
-    padding: 10px;
-}
-
-@media screen and (max-width: 991.98px) {
-        nav {
-        flex-wrap: wrap;
-    }
-
-    .menu {
-        display: none;
-        width: 100%;
-    }
-
-    .menu.active {
-        display: block;
-    }
-
-    .menu ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .menu ul li {
-        display: block;
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        display: block;
-        padding: 10px;
-    }
+  .btn {
+    width: 80%;
+    margin: auto;
+  }
 }
