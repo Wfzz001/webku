@@ -311,7 +311,7 @@ h3 {
 }
 
 /* Tambahan media query untuk tampilan mobile */
-@media (max-width: 768px) {
+@media (max-width: 423px) {
   .wrapper {
     width: 90%;
     padding: 0 10px;
